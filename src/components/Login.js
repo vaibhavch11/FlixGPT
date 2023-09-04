@@ -5,6 +5,7 @@ import { checkValidData } from '../utils/validate';
 const Login = () => {
 
     const[isSignUp,setIsSignUp] = useState(false);
+    const [errorMessage,setErrorMessage] = useState(null);
 
     const email = useRef(null);
     const password = useRef(null);
@@ -14,8 +15,11 @@ const Login = () => {
 
       const message = checkValidData(email.current.value,password.current.value);
 
+
     //   console.log(email.current.value); //.current.value points to the input box current value.
     //   console.log(password.current.value);
+
+      setErrorMessage(message); //settig error
 
     console.log(message);
     }
@@ -33,8 +37,10 @@ const Login = () => {
             <h1 className='font-bold text-3xl p-2'>{isSignUp ? "Sign Up" : "Sign In" }</h1>
 
             {isSignUp && <input type='text' placeholder='Full Name' className='p-4  my-2 w-full rounded-lg bg-gray-700' />}
-            <input ref={email} type='text' placeholder='Email Address' className='p-4  my-2 w-full rounded-lg bg-gray-700' />
+            <input ref={email} type='email' placeholder='Email Address' className='p-4  my-2 w-full rounded-lg bg-gray-700' />
             <input ref={password} type='password' placeholder='Password' className='p-4 my-2 w-full rounded-lg  bg-gray-700' />
+
+            <p className='text-red-500 '>{errorMessage}</p> 
 
             <button className='p-4 my-6 text-white  w-full rounded-lg bg-red-600' onClick={handleButtonClick} >{isSignUp ? "Sign Up" : "Sign In" }</button>
 
