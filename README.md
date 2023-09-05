@@ -7,6 +7,11 @@
 - Login/Signup
    - Sign In / Sign Up Form
    - Redirect to Browser Page
+   - Login Page
+   - Form Validation
+   - useRef Hook
+   - Firebase Setup
+   
 
 - Browser (after Authentication)
    - Header
