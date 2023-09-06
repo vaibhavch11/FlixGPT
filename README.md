@@ -11,6 +11,8 @@
    - Form Validation
    - useRef Hook
    - Firebase Setup
+   - Implemented Sign In user using firebase
+   - Created our Redux store with userSlice
    
 
 - Browser (after Authentication)
