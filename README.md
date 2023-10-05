@@ -13,6 +13,13 @@
    - Firebase Setup
    - Implemented Sign In user using firebase
    - Created our Redux store with userSlice
+   - Get Data from TMDB movie list api
+   - Custom hooks for playing movie
+   - create movieSlice to store data
+   - update store with movie data
+   - Planning for MainContainer(Movie Trailer at top) & SecoundryContainer(Movie cards)
+   - Embedded the Youtube video 
+
    
 
 - Browser (after Authentication)
