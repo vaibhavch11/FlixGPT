@@ -5,17 +5,23 @@ import MainContainer from './MainContainer';
 import SecoundryContainer from './SecoundryContainer';
 import usePopularMovies from '../hooks/usePopularMovies';
 import useTrendingMovies from '../hooks/useTrendingMovies';
+import useUpcomingMovies from '../hooks/useUpcomingMovies';
+// import { useSelector } from 'react-redux';
+// import searchGpt from './searchGpt';
 
 
 const Browse = () => {
+
+  // const showGptSearch = useSelector((store)=> store.gpt.showGptSearch)
 
  //Custom hook
    useNowPlayMovies();
    usePopularMovies();
    useTrendingMovies();
+   useUpcomingMovies();
 
   return (
-    <div>
+    <div className='Browse'>
       <Header />
       <MainContainer />
       <SecoundryContainer />
@@ -26,10 +32,7 @@ const Browse = () => {
       SecoundryContainer
          - MovieList * n
          - cards * n */}
-    </div>
-
-
-    
+    </div>  
   )
 }
 

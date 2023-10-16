@@ -20,6 +20,12 @@
    - Planning for MainContainer(Movie Trailer at top) & SecoundryContainer(Movie cards)
    - Embedded the Youtube video 
 
+
+   - GPT search bar
+   - Multi-Language Feature (***)
+   - Routing of Select Lang & Search Button
+   
+
    
 
 - Browser (after Authentication)
