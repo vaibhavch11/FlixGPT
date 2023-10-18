@@ -17,5 +17,5 @@ export const SUPPORTED_LANG = [{identifier : "en", name : "English"},
 
 
 //-----------------------------OpenAPI secret API-Key----------------------------------------
-export const OPENAPI_KEY = "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";
+export const OPENAPI_KEY = "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";
 
