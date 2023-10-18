@@ -36,14 +36,14 @@ const Header = () => {
 
   return (
     <div className='absolute bg-gradient-to-b from-black w-full z-30 flex justify-between items-center'>
-        <img className='w-60' src='https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png' alt='logo' />
+        <img className='w-1/5' src='https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png' alt='logo' />
 
         {location.pathname == "/browse" && <div>
           
 
        <Link to="/searchGpt">
          <button className='text-white bg-purple-600 rounded-lg m-4 py-3 px-4'
-          onClick={handleToggleGpt}>Search GPT</button>
+          onClick={handleToggleGpt}>⭐ Search GPT</button>
        </Link> 
 
        </div>

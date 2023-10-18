@@ -14,3 +14,8 @@ export const SUPPORTED_LANG = [{identifier : "en", name : "English"},
 {identifier : "hindi", name : "Hindi"},
 {identifier : "spanish", name : "Spanish"}]
 
+
+
+//-----------------------------OpenAPI secret API-Key----------------------------------------
+export const OPENAPI_KEY = "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";
+

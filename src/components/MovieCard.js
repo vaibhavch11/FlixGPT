@@ -2,6 +2,8 @@ import React from 'react'
 import { Movie_IMG_URL } from '../utils/constant'
 
 const MovieCard = ({posterPath}) => {
+
+  if(!posterPath) return null
    
   return (
     <div>
