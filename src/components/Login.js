@@ -3,7 +3,7 @@ import Header from './Header'
 import { checkValidData } from '../utils/validate';
 import {  createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile  } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
 
@@ -17,6 +17,8 @@ const Login = () => {
     const name = useRef(null);
     const email = useRef(null);
     const password = useRef(null);
+
+    
 
     const handleButtonClick = () => {
       //form data validation --> utilies
@@ -95,6 +97,9 @@ const Login = () => {
             <p className='text-red-500 '>{errorMessage}</p> 
 
             <button className='p-4 my-6 text-white  w-full rounded-lg bg-red-600' onClick={handleButtonClick} >{isSignUp ? "Sign Up" : "Sign In" }</button>
+            <Link to="/browse">
+              <button className='p-4 my-1 text-white  w-full rounded-lg bg-red-600'>Guest Free ⭐</button>
+            </Link>
 
             <p className='py-4 cursor-pointer ' onClick={()=>{setIsSignUp(!isSignUp)}}>New to FlixGPT? Sign up now.</p>
         </form>
