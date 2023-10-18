@@ -56,7 +56,7 @@ const GptSearch = () => {
   }
 
   return (
-    <div className='pt-[15%] md:pt-[10%] flex justify-center'>
+    <div className='pt-[15%] md:pt-[10%] flex justify-center '>
 
         <form className=' flex md:p-[3] bg-black w-1/2 p-[5%] my-[5%] mx-auto right-0 left-0 text-white  bg-opacity-80' onSubmit={(e)=>(e.preventDefault())}>
             <input ref={searchText} type='text' placeholder={lang[langKey].gptSearchPlaceholder} className='p-4  my-2 w-full rounded-l-lg bg-gray-700' />
