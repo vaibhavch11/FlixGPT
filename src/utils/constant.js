@@ -17,5 +17,5 @@ export const SUPPORTED_LANG = [{identifier : "en", name : "English"},
 
 
 //-----------------------------OpenAPI secret API-Key----------------------------------------
-export const OPENAPI_KEY = "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";
+export const OPENAPI_KEY = process.env.REACT_APP_OPENAI_KEY;
 
